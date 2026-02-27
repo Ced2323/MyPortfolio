@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(45deg, rgba(188, 85, 26, 0.8), rgba(90, 156, 242, 0.8), rgba(41, 128, 185, 0.8)); /* Gradient background */
+  color: #e0e7ff; /* Light text color for contrast */
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(44, 39, 56, 0.85);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, #e0abf5, #e4ddeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #44c4de; /* Light blue to match the overall theme */
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.cta-button {
+  background-color: #44c4de; /* Changed to match link hover color */
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #3b82f6; /* Brighter blue when hovered */
+}
+
+/* ================= SECTIONS GENERAL ================= */
+
+section {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* ================= HERO ================= */
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url('your-new-image.jpg'); /* Replace with the new image you want */
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(26, 188, 156, 0.9), rgba(155, 89, 182, 0.9), rgba(255, 173, 105, 0.9)); /* Slightly darker gradient for better readability */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding-top: 20%;
+}
+
+/* Circular Image Styling */
+.hero-img {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust the position to truly center it */
+  width: 150px; /* Set width for the circular image */
+  height: 150px; /* Set height for the circular image */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circular area without stretching */
+  border: 5px solid #fff; /* Optional: White border around the circular image */
+  margin-bottom: 20px; /* Add space below the image */
+}
+
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 20px; /* Adds space above the name */
+  margin-bottom: 15px; /* Optional: Adds space below the name */
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c0392b;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about p {
+  max-width: 700px;
+  color: #cbd5e1;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects-grid {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem; 
+  flex-wrap: nowrap; 
+}
+
+.card {
+  background: #224b7a;
+  padding: 2rem;
+  border-radius: 15px;
+  transition: 0.3s;
+  width: 300px; 
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: #7fa3d5;
+}
+
+/* ================= CONTACT ================= */
+
+#contact {
+  padding: 50px 0;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem; 
+}
+
+.contact-info p {
+  margin: 0; 
+}
+
+.contact-info a {
+  color: #d9dee6; 
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+  padding: 2rem;
+ background: rgba(44, 39, 56, 0.85);
+  color: #94a3b8;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width: 768px) {
+
+  nav ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #0f172a;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 1rem;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+}
+
+/* Hide project details by default */
+.project-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-details img {
+  width: 150px;
+  
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-details img:hover {
+  transform: scale(1.1);
+}
+
+.project-details.active {
+  max-height: 700px;
+}
+
+.project-details video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+
+/* ABOUT SECTION WITH IMAGE */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.about-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%; 
+  border: 5px solid #3b82f6; 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); 
+}
+

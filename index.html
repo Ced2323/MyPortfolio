@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">My Portfolio</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<section class="hero" id="home">
+  
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+      
+    <img src="mypic.jpg" alt="Profile Picture" class="hero-img">
+    <h1>Hi, I'm Cedrick Sanz Largo</h1>
+    <p>Computer Science Student @ Nemsu-LC</p>
+
+  </div>
+</section>
+
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+    <div class="card" onclick="toggleProject('Mulitmedia')">
+      <h3>Mulitmedia : Photoshop</h3>
+      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <br>
+        <dd>We’re editing an anime</dd>
+      </dl>
+
+      <div class="project-details" id="Mulitmedia">
+        <img src="multi.jpg" alt="pic 1">
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleProject('Entrep')">
+      <h3>Entrep : Startup Logo</h3>
+      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <br>
+        <dd>Our official Logo</dd>
+      </dl>
+
+      <div class="project-details" id="Entrep">
+        <img src="entrep.jpeg" alt="pic 1">
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleProject('Fundamentals')">
+      <h3>Fundamentals of Programming</h3>
+      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <br>
+        <dd>Final Project System using C Language</dd>
+      </dl>
+
+      <div class="project-details" id="Fundamentals">
+        <img src="funda.jpeg" alt="pic 1">
+        <img src="funda2.jpeg" alt="pic 2">
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleProject('Contemporary')">
+      <h3>Contemporary World : Diorama</h3>
+      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <br>
+        <dd>Diorama about Rural and Urban</dd>
+      </dl>
+
+      <div class="project-details" id="Contemporary">
+        <img src="contemp.jpeg" alt="pic 1">
+        <img src="contemp2.jpeg" alt="pic 2">
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleProject('Embedded')">
+      <h3>Embedded System: Robot</h3>
+      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
+        <br>
+        <dd>Robot Obstacle Avoidance</dd>
+      </dl>
+
+      <div class="project-details" id="Embedded">
+        <img src="emb.jpeg" alt="pic 1">
+        <img src="emb2.jpeg" alt="pic 2">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2 class="section-title">About Me</h2>
+
+  <br>
+  <p>
+    I am a Computer Science college student with a growing interest in programming, algorithms, and problem-solving. I am continuously working on improving both my technical skills and personal development, including communication and active listening. Through learning, practice, and self-reflection, I aim to grow into a capable and adaptable individual in the field of technology.
+  </p>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> 
+      <a href="mailto:largocedricksanzc@gmail.com">
+        largocedricksanzc@gmail.com
+      </a>
+    </p>
+
+    <p><strong>CP #:</strong> 
+      <a href="tel:09462158248">
+        09462158248
+      </a>
+    </p>
+
+    <p><strong>FB #:</strong> 
+      <a href="https://www.facebook.com/cedricksanzcuratolargo" target="_blank">
+        Cedrick Sanz Curato Largo
+      </a>
+    </p>
+  </div>
+</section>
+<footer>
+  © 2026 MyPortfolio
+</footer>
+
+<!-- External JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
