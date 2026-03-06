@@ -22,7 +22,7 @@ multimedia:[
 ],
 
 entrep:[
-"https://youtube.com/embed/1zfaLxvjIPA"
+"https://youtube.com/embed/SViShkSoP4c"
 ],
 
 fundamentals:[
@@ -103,3 +103,4 @@ function closeModal(){
 document.getElementById("projectModal").style.display = "none";
 
 }
+
