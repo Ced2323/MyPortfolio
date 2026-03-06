@@ -40,76 +40,50 @@
 
   </div>
 </section>
+ 
+<div id="projectModal" class="modal">
 
+  <span class="close" onclick="closeModal()">×</span>
 
+  <button class="prev" onclick="prevSlide()">❮</button>
+  <button class="next" onclick="nextSlide()">❯</button>
 
-<!-- PROJECTS -->
+  <div class="modal-content">
+      <div id="modalContent"></div>
+  </div>
+
+</div>
+
 <section id="projects">
   <h2 class="section-title">Projects</h2>
 
   <div class="projects-grid">
-    <div class="card" onclick="toggleProject('Mulitmedia')">
-      <h3>Mulitmedia : Photoshop</h3>
-      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
-        <br>
-        <dd>We’re editing an anime</dd>
-      </dl>
 
-      <div class="project-details" id="Mulitmedia">
-        <img src="multi.jpg" alt="pic 1">
-      </div>
+    <div class="card" onclick="openProject('multimedia')">
+      <h3>Multimedia : Photoshop</h3>
+      <p>We’re editing an anime</p>
     </div>
 
-    <div class="card" onclick="toggleProject('Entrep')">
+    <div class="card" onclick="openProject('entrep')">
       <h3>Entrep : Startup Logo</h3>
-      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
-        <br>
-        <dd>Our official Logo</dd>
-      </dl>
-
-      <div class="project-details" id="Entrep">
-        <img src="entrep.jpeg" alt="pic 1">
-      </div>
+      <p>Video pitch about Antidote Buoy.<br>watch the video</p>
     </div>
 
-    <div class="card" onclick="toggleProject('Fundamentals')">
+    <div class="card" onclick="openProject('fundamentals')">
       <h3>Fundamentals of Programming</h3>
-      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
-        <br>
-        <dd>Final Project System using C Language</dd>
-      </dl>
-
-      <div class="project-details" id="Fundamentals">
-        <img src="funda.jpeg" alt="pic 1">
-        <img src="funda2.jpeg" alt="pic 2">
-      </div>
+      <p>Final Project System using C Language</p>
     </div>
 
-    <div class="card" onclick="toggleProject('Contemporary')">
+    <div class="card" onclick="openProject('contemporary')">
       <h3>Contemporary World : Diorama</h3>
-      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
-        <br>
-        <dd>Diorama about Rural and Urban</dd>
-      </dl>
-
-      <div class="project-details" id="Contemporary">
-        <img src="contemp.jpeg" alt="pic 1">
-        <img src="contemp2.jpeg" alt="pic 2">
-      </div>
+      <p>Diorama about Rural and Urban</p>
     </div>
 
-    <div class="card" onclick="toggleProject('Embedded')">
-      <h3>Embedded System: Robot</h3>
-      <dl style="text-align: left; max-width: 500px; margin: 0 auto;">
-        <br>
-        <dd>Robot Obstacle Avoidance</dd>
-      </dl>
-
-      <div class="project-details" id="Embedded">
-        <img src="emb.jpeg" alt="pic 1">
-        <img src="emb2.jpeg" alt="pic 2">
-      </div>
+    <div class="card" onclick="openProject('embedded')">
+      <h3>Embedded System : Robot</h3>
+      <p>Robot Obstacle Avoidance</p>
     </div>
+
   </div>
 </section>
 
